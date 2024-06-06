@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Add styles for the animated burger */
+
+.burger-animation {
+    position: absolute;
+    top: 30%; /* Adjusted top position to shift burger animation up */
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95); /* Initial scale */
+    width: 200px;
+    height: 200px;
+    background-image: url('panda-burger.gif');
+    background-size: cover;
+    background-position: center;
+    animation: pulseBurger 3s ease-in-out infinite alternate; /* Pulsating animation */
+    z-index: -1;
+}
+
+
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+
+.header {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Lobster', cursive; /* Using Lobster font for "Burger Café" */
+    animation: fadeInDown 1s ease-out;
+    margin-top: 10px; /* Adjusted margin to shift "Burger Café" font down */
+}
+
+
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin-left: -20px; /* Adjusted margin to shift the navigation links more towards the left */
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    animation: fadeInDown 1.2s ease-out;
+    font-family: 'Roboto', sans-serif; /* Applying Roboto font to the navigation links */
+}
+
+.nav-menu li:last-child a {
+    margin-right: 20px; /* Adjusted margin-right for the last link to maintain spacing */
+}
+
+
+.nav-menu a:hover {
+    color: #ff6347;
+}
+
+.hero {
+    margin-top: 20px; /* Adjusted margin to shift hero content up */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 2s ease-out;
+}
+
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    animation: fadeInLeft 1.5s ease-out;
+}
+
+.hero-text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    font-weight: 400;
+    animation: fadeInRight 1.5s ease-out;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.btn:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+.menu-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.section-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-out;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.menu-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.menu-item p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.about-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #2c2c2c;
+}
+
+.about-text {
+    font-size: 1.2em;
+    margin-top: 20px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: #444;
+}
+
+.contact-form button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 2s ease-out;
+}
+
+.contact-form button:hover {
+    background-color: #e5533d;
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulseBurger {
+    0% { transform: translate(-50%, -50%) scale(0.95); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
